@@ -1,4 +1,4 @@
-/*
+/* testing git accounts
  *This is a class that is an interface for the user
  *
  * @author Ethan Ferry
