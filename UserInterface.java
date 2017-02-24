@@ -41,7 +41,7 @@ public class UserInterface{
 
 	/*
  	 *  This is a method that lets the user view their profilee
- 	 *
+ 	 **
  	 */ 	 
 	public void viewProfile(){
 
