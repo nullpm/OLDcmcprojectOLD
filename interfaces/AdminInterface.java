@@ -1,3 +1,9 @@
+/**
+ * File: AdminInterface.java
+ */
+
+package interfaces;
+
 /*
  *This is a class that is an interface for the admin
  *
