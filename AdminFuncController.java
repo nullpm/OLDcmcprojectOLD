@@ -28,7 +28,43 @@ public class AdminFuncController{
  public boolean addUniversity(String name, String location, int numberOfStudents, int percentFemale, int SATVerbal, int SATMath, int expense, int percentFinancialAid, int numberOfApplicants, int perecentAdmitted, int percentEnrolled, int academicScale, int socialScale, String empases){
   return false;
  }
- 
+  /**
+   * This is a method that returns a list of universities in the system
+   * 
+   * @returns a set of all university objects in the database
+   */
+  public University[] viewAllUniversities(University university){
+    return null;
+  }
+  
+  /**
+   * This is a method that edits a university's information in the database
+   * 
+   * @param university the edited university object
+   * @returns true if university is updated successfully
+   */
+  public boolean editUniversity(University university){
+    return false;
+  }
+  
+    /**
+   * This method returns an account to be viewed
+   * @param username the username of the account to be viewed
+   * @returns a set of accounts in the system
+   */
+  public Account viewUser(String username){
+    return null
+  }
+  
+      /**
+   * This method returns an account to be deactivated
+   * @param username the username of the account to be deactivated
+   */
+  public coid deactivate(String username){
+    return null
+  }
+  
+  
    /**
    * This method adds an account to the system
    * 
@@ -42,5 +78,14 @@ public class AdminFuncController{
    */
   public boolean addUser(String firstname, String lastname, String username, String password, Char type, Char status){
     return true;
+  }
+  
+  /**
+   * This method returns a set of all accounts in the system
+   * 
+   * @returns a set of accounts
+   */
+  public Account manageUsers(){
+    return null;
   }
 }
