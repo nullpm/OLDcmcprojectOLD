@@ -1,4 +1,8 @@
+/**
+ * File: UserFuncController.java
+ */
 
+package controllers;
 /**
  * This is a class that holds all the functionalities of a User
  * 

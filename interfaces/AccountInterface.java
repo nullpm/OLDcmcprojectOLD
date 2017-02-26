@@ -4,7 +4,7 @@
 
 package interfaces;
 
-/*
+/**
  * This is an abstract class that is interface for accounts
  *
  * @author Ethan Ferry
