@@ -1,7 +1,3 @@
-/**
- * 
- */
-package cmcClasses;
 
 /**
  * This is the User base class
@@ -9,11 +5,17 @@ package cmcClasses;
  * @author mjzent
  * @version 0.1
  */
-public class User {
+public class User extends Account{
 	
-
+	
 	private University[] savedUniversities;
 
+	/**
+	 * This creates a new User and fills the fields required for all acocunts
+	 */
+	public User(String username, Strin firstName, String lastName, String password, char type, char status){
+		super(username,firstname,lastname,password,type,status);
+	}
 	/**
 	 * This method gets a list of this users saved universities
 	 * 

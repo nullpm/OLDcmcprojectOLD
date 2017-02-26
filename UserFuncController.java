@@ -1,7 +1,3 @@
-/**
- * 
- */
-package cmcClasses;
 
 /**
  * This is a class that holds all the functionalities of a User
@@ -12,7 +8,12 @@ package cmcClasses;
 public class UserFuncController {
 	
 	private User user;
-	
+	/**
+	 * This creates a new UserFuncController with the parameter of the user using it
+	 */
+	public UserFuncController(User user){
+		this.user = user;
+	}
 	/**
 	 * This method talks to the User class and removes a university from the users list of saved universities
 	 * 
