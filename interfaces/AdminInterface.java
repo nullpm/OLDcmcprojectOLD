@@ -12,9 +12,9 @@ public class AdminInterface{
  	* 
  	* This method is to view all schools
  	*
- 	* @returns an array of accounts
+ 	* @returns an array of universities
  	*/ 
-	public Account[] viewAllSchools(){
+	public Universities[] viewAllSchools(){
 		return null;
 	}
 
