@@ -1,3 +1,8 @@
+/**
+ * File: User.java
+ */
+
+package baseclasses;
 
 /**
  * This is the User base class
