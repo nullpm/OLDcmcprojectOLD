@@ -1,3 +1,8 @@
+/*
+ *File: DBController.java
+ *
+ */
+package controllers;
 /**
  * This is a class that controls the database functions
  * 

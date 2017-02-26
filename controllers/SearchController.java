@@ -1,3 +1,8 @@
+/*
+ *File: SearchController.java
+ *
+ */
+package controllers;
 
 /**
  * This is a class that holds all the methods related to searching

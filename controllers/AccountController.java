@@ -1,3 +1,9 @@
+/*
+ *File: AccountController.java
+ *
+ */
+
+package controllers;
 /**
  * This is a class that controls the account functions
  * 

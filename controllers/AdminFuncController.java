@@ -1,3 +1,9 @@
+/*
+ *File: AdminFuncController.java
+ *
+ */
+package controllers;
+
 /**
  * This is a class that controls the admin functions
  * 
