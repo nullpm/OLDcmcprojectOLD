@@ -39,7 +39,7 @@ publsme: String, lastName: String): booleanc class UserInterface{
  	*
  	* @returns an array of universities that meet the criteria
  	*/
-	public university[] searchSchools(String name, String state, String location, int numberOfStudents, int percentFemale, int SATVerbal, int SATMath, int expenses, int percentFinancialAid, int numberOfApplicants, int percentAdmitted, int percentEnrolled, int academicScale, int socialScale, String emphases){
+	public University[] searchSchools(String name, String state, String location, int numberOfStudents, int percentFemale, int SATVerbal, int SATMath, int expenses, int percentFinancialAid, int numberOfApplicants, int percentAdmitted, int percentEnrolled, int academicScale, int socialScale, String emphases){
 		return null;
 	}
 
