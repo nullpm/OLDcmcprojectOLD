@@ -11,8 +11,8 @@ public class UserInterface{
  	* This is a method to view saved schools
  	* 
  	*/
-	public void viewSavedSchools(){
-
+	public University[] viewSavedSchools(){
+		return null;
 	}
 	/*
  	* This is a method to search for schools
@@ -41,10 +41,11 @@ public class UserInterface{
 
 	/*
  	 *  This is a method that lets the user view their profilee
- 	 **
+ 	 *  
+ 	 *  @returns String
  	 */ 	 
-	public void viewProfile(){
-
+	public String viewProfile(){
+		return null;
 	}
 
 	/* 
