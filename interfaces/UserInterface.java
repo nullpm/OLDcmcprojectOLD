@@ -1,21 +1,18 @@
 /**
  * File: UserInterface.java
  */
-
-package interfaces;
-
-
-/* 
+ packages interfaces;
+ /* 
  *This is a class that is an interface for the user
  *
  * @author Ethan Ferry
  * @version 0.1
  */
 
-public class UserInterface{
+publsme: String, lastName: String): booleanc class UserInterface{
 	
 	/*
- 	* This is a method to view saved schools
+ 	o* This is a method to view saved schools
  	* 
  	*/
 	public University[] viewSavedSchools(){
