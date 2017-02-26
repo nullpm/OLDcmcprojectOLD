@@ -1,3 +1,10 @@
+/**
+ * File: UserInterface.java
+ */
+
+package interfaces;
+
+
 /* 
  *This is a class that is an interface for the user
  *
