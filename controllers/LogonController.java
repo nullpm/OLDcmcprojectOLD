@@ -1,3 +1,10 @@
+
+/**
+ * File: LoggonController.java
+ */
+
+package controllers;
+
 /**
  * This is a class that controls the logon functions
  * 
