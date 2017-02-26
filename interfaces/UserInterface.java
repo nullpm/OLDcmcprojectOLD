@@ -64,21 +64,11 @@ public class UserInterface{
 	public University[] viewSearches(){
 		return null;
 	}
-	/*
- 	 * This is a method that edits a profile
- 	 *
- 	 * @param firstName the first name of the users account
- 	 * @param lastName the last name of the users account
- 	 */ 
-	public boolean editProfile(String firstName, String lastName){
-		return false;
-	}
 
-	/*
- 	 * This is a method that edits a profile
+	/* This is a method that edits a profile
  	 *
  	 * @param An account of the profile being edited
- 	 *
+ 	 * @throws IllegalArgumentException if acc has a different username
  	 */ 
 	public boolean editProfile(Account acc){
 		return false;
