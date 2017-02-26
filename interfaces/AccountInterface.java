@@ -1,3 +1,9 @@
+/**
+ * File: AccountInterface.java
+ */
+
+package interfaces;
+
 /*
  * This is an abstract class that is interface for accounts
  *
