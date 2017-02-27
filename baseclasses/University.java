@@ -30,43 +30,56 @@ public class University
   /**
    * A constructor that creates a University object with all of the requirements
    * 
-   * @param name
-   * @param state
-   * @param location
-   * @param emphasis
-   * @param number of students
-   * @param percent female
-   * @param SAT Verbal score
-   * @param SAT Math score
-   * @param expenses
-   * @param percent of financial aid
-   * @param number of applicants
-   * @param percent admitted
-   * @param percent enrolled
-   * @param academic scale
-   * @param social scale
+   * @param name of the university
+   * @param state in which university is located
+   * @param type of location university is located (urban, rural, suburban, etc.)
+   * @param subjects that are emhasized at the university
+   * @param number of students at the university
+   * @param percent of female students at the university
+   * @param average SAT Verbal score for enrolled students
+   * @param average SAT Math score for enrolled students
+   * @param anual expenses or tuition to attend university
+   * @param percent of financial aid given to students at university
+   * @param number of students that applied to university
+   * @param percent of students admitted to university
+   * @param percent of students that decide to enroll at university
+   * @param academic scale indicating the academic scale at university (1-5)
+   * @param social scale indicating quality of life at university (1-5)
+   * @throws IllegalArgumentsException if the academicScale parameter is not between 1 and 5
+   * @throws IllegalArgumentsException if the socialScale parameter is not between 1 and 5
    */
   public University(String name, String state, String location, String emphasis,
                     int numberOfStudents, int percentFemale, int satVerbal, int satMath,
                     int expenses, int percentFinancialAid, int numberOfapplicants,
                     int percentAdmitted, int percentEnrolled, int academicScale,
-                    int socialScale)
+                    int socialScale) throws IllegalArgumentException
   {
-    this.name = name;
-    this.state = state;
-    this.location = location;
-    this.emphasis = emphasis;
-    this.numberOfStudents = numberOfStudents;
-    this.percentFemale = percentFemale;
-    this.satVerbal = satVerbal;
-    this.satMath = satMath;
-    this.expenses = expenses;
-    this.percentFinancialAid = percentFinancialAid;
-    this.numberOfApplicants = numberOfApplicants;
-    this.percentAdmitted = percentAdmitted;
-    this.percentEnrolled = percentEnrolled;
-    this.academicScale = academicScale;
-    this.socialScale = socialScale;
+	  if((academicScale < 1 || acdemicScale > 5))
+	  {
+		  throw new IllegalArgumentException("Parameter for 'Academic Scale' is not a valid number. Must be an integer 1 - 5");
+	  }
+	  else if((socialScale < 1 || socialScale > 5))
+	  {
+		  throw new IllegalArgumentException("Parameter for 'Social Scale' is not a valid number. Must be an integer 1 - 5");
+	  }
+	  else
+	  {
+	    this.name = name;
+	    this.state = state;
+	    this.location = location;
+	    this.emphasis = emphasis;
+	    this.numberOfStudents = numberOfStudents;
+	    this.percentFemale = percentFemale;
+	    this.satVerbal = satVerbal;
+	    this.satMath = satMath;
+	    this.expenses = expenses;
+	    this.percentFinancialAid = percentFinancialAid;
+	    this.numberOfApplicants = numberOfApplicants;
+	    this.percentAdmitted = percentAdmitted;
+	    this.percentEnrolled = percentEnrolled;
+	    this.academicScale = academicScale;
+	    this.socialScale = socialScale;
+	  }
   }
   /**
    * A method that gets the name of the University

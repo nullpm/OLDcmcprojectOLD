@@ -19,12 +19,12 @@ public class Account
   /**
    * A contructor the creates an account object
    * 
-   * @param username
-   * @param firstName
-   * @param lastName
-   * @param password
-   * @param type
-   * @param status
+   * @param username of the account
+   * @param first name of the account
+   * @param last name of the account
+   * @param password for the account
+   * @param type of account the account
+   * @param status of the account
    */
   public Account(String username, String firstName, String lastName, String password,
                  char type, char status)
