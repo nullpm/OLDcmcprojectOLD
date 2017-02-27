@@ -13,7 +13,7 @@ package controllers;
  */
 public class LogonController{
   
-  /**
+ /**
    * This is a method that logs in the user
    * 
    * @param Username of the user
@@ -26,6 +26,7 @@ public class LogonController{
   
   /**
    * This is a method that logs out the user
+   *
    * 
    * @param An account of the user being logged out
    */
