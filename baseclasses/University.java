@@ -45,28 +45,41 @@ public class University
    * @param percent of students that decide to enroll at university
    * @param academic scale indicating the academic scale at university (1-5)
    * @param social scale indicating quality of life at university (1-5)
+   * @throws IllegalArgumentsException if the academicScale parameter is not between 1 and 5
+   * @throws IllegalArgumentsException if the socialScale parameter is not between 1 and 5
    */
   public University(String name, String state, String location, String emphasis,
                     int numberOfStudents, int percentFemale, int satVerbal, int satMath,
                     int expenses, int percentFinancialAid, int numberOfapplicants,
                     int percentAdmitted, int percentEnrolled, int academicScale,
-                    int socialScale)
+                    int socialScale) throws IllegalArgumentsException
   {
-    this.name = name;
-    this.state = state;
-    this.location = location;
-    this.emphasis = emphasis;
-    this.numberOfStudents = numberOfStudents;
-    this.percentFemale = percentFemale;
-    this.satVerbal = satVerbal;
-    this.satMath = satMath;
-    this.expenses = expenses;
-    this.percentFinancialAid = percentFinancialAid;
-    this.numberOfApplicants = numberOfApplicants;
-    this.percentAdmitted = percentAdmitted;
-    this.percentEnrolled = percentEnrolled;
-    this.academicScale = academicScale;
-    this.socialScale = socialScale;
+	  if((academicScale < 1 || acdemicScale > 5))
+	  {
+		  throw new IllegalArgumentException("Parameter for 'Academic Scale' is not a valid number. Must be an integer 1 - 5");
+	  }
+	  else if((socialScale < 1 || socialScale > 5))
+	  {
+		  throw new IllegalArgumentException("Parameter for 'Social Scale' is not a valid number. Must be an integer 1 - 5");
+	  }
+	  else
+	  {
+	    this.name = name;
+	    this.state = state;
+	    this.location = location;
+	    this.emphasis = emphasis;
+	    this.numberOfStudents = numberOfStudents;
+	    this.percentFemale = percentFemale;
+	    this.satVerbal = satVerbal;
+	    this.satMath = satMath;
+	    this.expenses = expenses;
+	    this.percentFinancialAid = percentFinancialAid;
+	    this.numberOfApplicants = numberOfApplicants;
+	    this.percentAdmitted = percentAdmitted;
+	    this.percentEnrolled = percentEnrolled;
+	    this.academicScale = academicScale;
+	    this.socialScale = socialScale;
+	  }
   }
   /**
    * A method that gets the name of the University
