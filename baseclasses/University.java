@@ -30,21 +30,21 @@ public class University
   /**
    * A constructor that creates a University object with all of the requirements
    * 
-   * @param name
-   * @param state
-   * @param location
-   * @param emphasis
-   * @param number of students
-   * @param percent female
-   * @param SAT Verbal score
-   * @param SAT Math score
-   * @param expenses
-   * @param percent of financial aid
-   * @param number of applicants
-   * @param percent admitted
-   * @param percent enrolled
-   * @param academic scale
-   * @param social scale
+   * @param name of the university
+   * @param state in which university is located
+   * @param type of location university is located (urban, rural, suburban, etc.)
+   * @param subjects that are emhasized at the university
+   * @param number of students at the university
+   * @param percent of female students at the university
+   * @param average SAT Verbal score for enrolled students
+   * @param average SAT Math score for enrolled students
+   * @param anual expenses or tuition to attend university
+   * @param percent of financial aid given to students at university
+   * @param number of students that applied to university
+   * @param percent of students admitted to university
+   * @param percent of students that decide to enroll at university
+   * @param academic scale indicating the academic scale at university (1-5)
+   * @param social scale indicating quality of life at university (1-5)
    */
   public University(String name, String state, String location, String emphasis,
                     int numberOfStudents, int percentFemale, int satVerbal, int satMath,
