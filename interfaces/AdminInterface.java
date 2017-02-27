@@ -20,7 +20,7 @@ public class AdminInterface{
  	*
  	* @returns an array of universities
  	*/ 
-	public Universities[] viewAllSchools(){
+	public ArrayList<University> viewAllSchools(){
 		return null;
 	}
 

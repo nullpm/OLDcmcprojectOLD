@@ -48,7 +48,7 @@ public class DBController{
    * @param univeristy the university object of the university that reccomendtions should be found for
    * @returns a set of university objects that are similar to the specified one
    */
-  public University[] getUniversityRecomendations(University university){
+  public ArrayList<University> getUniversityRecomendations(University university){
     return null;
   }
   /**
@@ -56,7 +56,7 @@ public class DBController{
    * 
    * @returns a set of all university objects in the database
    */
-  public University[] getUniversities(University university){
+  public ArrayList<University> getUniversities(University university){
     return null;
   }
   /**
@@ -73,7 +73,7 @@ public class DBController{
    * 
    * @returns a set of accounts in the database
    */
-  public Account[] getAccounts(){
+  public ArrayList<Account> getAccounts(){
     return null
   } 
     /**

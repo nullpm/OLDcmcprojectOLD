@@ -13,7 +13,7 @@ package baseclasses;
 public class User extends Account{
 	
 	
-	private University[] savedUniversities;
+	private ArrayList<University> savedUniversities;
 
 	/**
 	 * This creates a new User and fills the fields required for all acocunts
@@ -26,7 +26,7 @@ public class User extends Account{
 	 * 
 	 * @return the savedUniversities
 	 */
-	public University[] getSavedUniversities() {
+	public ArrayList<University> getSavedUniversities() {
 		return savedUniversities;
 	}
 

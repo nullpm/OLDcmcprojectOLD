@@ -39,7 +39,7 @@ public class AdminFuncController{
    * 
    * @returns a set of all university objects in the database
    */
-  public University[] viewAllUniversities(University university){
+  public ArrayList<University> viewAllUniversities(University university){
     return null;
   }
   

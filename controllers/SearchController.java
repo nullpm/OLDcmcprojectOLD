@@ -12,16 +12,16 @@ package controllers;
  */
 public class SearchController {
 
-	private University[] searchedUniversities;
+	private ArrayList<University> searchedUniversities;
 	
 	/**
 	 * This method holds the algorithm for finding related universities to a given university
 	 * 
 	 * @param university
-	 * @param n
+	 * @param (n) number of recommended universities the user would like
 	 * @return an array of size n holding the most closely related universities
 	 */
-	public University[] findRelatedUniversities(University university, int n){
+	public ArrayList<University> findRelatedUniversities(University university, int n){
 		return null;
 	}
 	

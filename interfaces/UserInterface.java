@@ -18,7 +18,7 @@ public class UserInterface{
  	* This is a method to view saved schools
  	* 
  	*/
-	public University[] viewSavedSchools(){
+	public ArrayList<University> viewSavedSchools(){
 		return null;
 	}
 	/*
@@ -42,7 +42,7 @@ public class UserInterface{
  	*
  	* @returns an array of universities that meet the criteria
  	*/
-	public University[] searchSchools(String name, String state, String location, int numberOfStudents, int percentFemale, int SATVerbal, int SATMath, int expenses, int percentFinancialAid, int numberOfApplicants, int percentAdmitted, int percentEnrolled, int academicScale, int socialScale, String emphases){
+	public ArrayList<University> searchSchools(String name, String state, String location, int numberOfStudents, int percentFemale, int SATVerbal, int SATMath, int expenses, int percentFinancialAid, int numberOfApplicants, int percentAdmitted, int percentEnrolled, int academicScale, int socialScale, String emphases){
 		return null;
 	}
 
@@ -68,7 +68,7 @@ public class UserInterface{
  	 *
  	 * @returns an array of University objects 	 *
  	 */ 
-	public University[] viewSearches(){
+	public ArrayList<University> viewSearches(){
 		return null;
 	}
 
