@@ -52,7 +52,7 @@ public class University
                     int numberOfStudents, int percentFemale, int satVerbal, int satMath,
                     int expenses, int percentFinancialAid, int numberOfapplicants,
                     int percentAdmitted, int percentEnrolled, int academicScale,
-                    int socialScale) throws IllegalArgumentsException
+                    int socialScale) throws IllegalArgumentException
   {
 	  if((academicScale < 1 || acdemicScale > 5))
 	  {
