@@ -5,6 +5,8 @@
 
 package controllers;
 
+import baseclasses.Account;
+
 /**
  * This is a class that controls the logon functions
  * 
