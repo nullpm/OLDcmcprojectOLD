@@ -21,7 +21,18 @@ public class LogonController{
    * @returns true if the login is completed
    */
   public boolean login(String username, String password){
-    return true;
+    DBController db = new DBController();
+    Account user = db.getAccount(username);
+    if(user == null){
+    	return false;
+    } else {
+    	if(user.getPassword() != password){
+    		return false;
+    	} else {
+    		user.login();
+    		return true;
+    	}
+    }
   }
   
   /**
@@ -31,6 +42,6 @@ public class LogonController{
    * @param An account of the user being logged out
    */
   public void logout(Account a){
-    
+    a.logout();
   }
 }
