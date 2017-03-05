@@ -56,7 +56,7 @@ public class DBController{
    * 
    * @returns a set of all university objects in the database
    */
-  public ArrayList<University> getUniversities(University university){
+  public ArrayList<University> getUniversities(){
     return null;
   }
   /**
