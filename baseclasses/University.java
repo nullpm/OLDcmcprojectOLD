@@ -226,7 +226,7 @@ public class University
    * 
    * @returns the emphasis from the University
    */
-  public String getEmpahasis()
+  public String getEmphasis()
   {
     return this.emphasis;
   }

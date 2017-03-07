@@ -17,12 +17,61 @@ public class SearchController {
 	/**
 	 * This method holds the algorithm for finding related universities to a given university
 	 * 
-	 * @param university
+	 * @param university to be compared to
 	 * @param (n) number of recommended universities the user would like
 	 * @return an array of size n holding the most closely related universities
 	 */
 	public ArrayList<University> findRelatedUniversities(University university, int n){
-		return null;
+		DBController db = new DBController();
+		ArrayList<University> Us = db.getUniversities();
+		ArrayList<Tuple<University,Integer>> distances = new ArrayList<Tuple<University,Integer>>();//always in sorted order
+		for(int i = 0,i < Us.size();i++){
+			University temp = Us.get(i);
+			int dist = distance(university, temp);
+			if(distances.size() = 0){
+				distances.add(new Typle<University,Integer>(temp,dist));
+			} else {
+				for(int j = 0;j < distances.size();j++){
+					if(distances.get(j).i > dist){
+						distances.add(j, new Typle<University,Integer>(temp,dist));
+						j = distances.size();
+					}
+				}
+			}
+		}
+		ArrayList<University> relatedUs = new ArrayList<University>();
+		for(int i = 0;i < n;i++){
+			relatedUs.add(distances.get(i).i);
+		}
+		return relatedUs;
+	}
+	
+	private int distance(University u, University c){
+		int distance = 0;
+		if(!u.getState().equals(c.getState())){
+			distance+=1;
+		}
+		if(!u.getLocation().equals(c.getLocation())){
+			distance+=1;
+		}
+		//numgber of students
+		distance+=Math.abs(u.getNumberOfStudents() - c.getNumberOfStudents())/(Integer.MAX_VALUE - 0);
+		distance+=Math.abs(u.getPercentFemale() - c.getPercentFemale())/(100-0);
+		distance+=Math.abs(u.getSATVerbal() - c.getSATVerbal())/(800-200);
+		distance+=Math.abs(u.getSATMath() - c.getSATMath())/(800-200);
+		//expenses
+		distance+=Math.abs(u.getExpenses() - c.getExpenses())/(Integer.MAX_VALUE - 0);
+		distance+=Math.abs(u.getPercentFinancialAid() - c.getPercentFinancialAid())/(100-0);
+		//number of applicants
+		distance+=Math.abs(u.getNumberOfApplicants() - c.getNumberOfApplicants())/(Integer.MAX_VALUE - 0);
+		distance+=Math.abs(u.getPercentAdmitted() - c.getPercentAdmitted())/(100-0);
+		distance+=Math.abs(u.getPercentEnrolled() - c.getPercentEnrolled())/(100-0);
+		distance+=Math.abs(u.getAcademicScale() - c.getSocialScale())/(5-0);
+		distance+=Math.abs(u.getSocialScale() - c.getSocialScale())/(5-0);
+		if(!u.getEmphasis).equals(c.getEmphasis())){
+			distance+=1;
+		}
+		return distance;
 	}
 	
 	/**
@@ -104,5 +153,14 @@ public class SearchController {
 			return true;
 		}
 	}
+	
+	private class Tuple<X, Y> { 
+		  public final X university; 
+		  public final Y i; 
+		  public Tuple(X university, Y i) { 
+		    this.university = university; 
+		    this.i = i; 
+		  } 
+		} 
 }
 
