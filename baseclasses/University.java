@@ -48,11 +48,11 @@ public class University
    * @throws IllegalArgumentsException if the academicScale parameter is not between 1 and 5
    * @throws IllegalArgumentsException if the socialScale parameter is not between 1 and 5
    */
-  public University(String name, String state, String location, String emphasis,
-                    int numberOfStudents, int percentFemale, int satVerbal, int satMath,
+  public University(String name, String state, String location, int numberOfStudents,
+		  			int percentFemale, int satVerbal, int satMath,
                     int expenses, int percentFinancialAid, int numberOfapplicants,
                     int percentAdmitted, int percentEnrolled, int academicScale,
-                    int socialScale) throws IllegalArgumentException
+                    int socialScale, String emphasis,) throws IllegalArgumentException
   {
 	  if((academicScale < 1 || acdemicScale > 5))
 	  {
@@ -67,7 +67,6 @@ public class University
 	    this.name = name;
 	    this.state = state;
 	    this.location = location;
-	    this.emphasis = emphasis;
 	    this.numberOfStudents = numberOfStudents;
 	    this.percentFemale = percentFemale;
 	    this.satVerbal = satVerbal;
@@ -79,6 +78,7 @@ public class University
 	    this.percentEnrolled = percentEnrolled;
 	    this.academicScale = academicScale;
 	    this.socialScale = socialScale;
+	    this.emphasis = emphasis;
 	  }
   }
   /**
