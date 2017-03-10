@@ -7,23 +7,36 @@ package controllers;
 /**
  * This is a class that controls the account functions
  * 
- * @author Kyle Becker
- * @version 0.1
+ * @author Kyle Becker and Ethan Ferry
+ * @version 0.1.1
  */
 public class AccountController{
   
+	private DBController database = new DBController();
   /**
    * This method updates account info
    * 
    * @param account the updated account that should be changed in our database
    * @param firstname the new firstname, null if to be unchanged
    * @param lastname the new lastname, null if to be unchanged
-   * @param username the new username, null if to be unchanged
    * @param password the new password, null if to be unchanged
    * @param type the new account type, null if to be unchanged
-   * @param status the new account status, null if to be unchnaged
+   * @param status the new account status, null if to be unchanged
    */
-  public void editUserInfo(Account account, String firstname, String lastname, String username, String password, Char type, Char status){}
+  public void editUserInfo(Account account, String firstname, String lastname, String password, Char type, Char status){
+	  if(firstname!=null)
+		  account.setFirstName(firstname);
+	  if(lastname!=null)
+		  account.setLastName(lastname);
+	  if(password!=null)
+		  account.setPassword(password);
+	  if(type!=null)
+		  account.setType(type);
+	  if(status!=null)
+		  account.setStatus(status);
+	  
+	  database.updateUser(account);
+  }
   
   /**
    * This method adds an account to the system
@@ -37,15 +50,17 @@ public class AccountController{
    * @returns true if account added successfully, otherwise false
    */
   public boolean addAccount(String firstname, String lastname, String username, String password, Char type, Char status){
-    return true;
+	  Account acc = new Account(firstname,lastname,username,password,type,status);
+	  return acccontrol.addAccount(acc); 
   }
   /**
    * This method returns a set of all the accounts in the system
    * 
-   * @returns a set of accounts in the system
+   * @returns an ArrayList of accounts in the system
    */
-  public Account[] getAccounts(){
-    return null
+  public ArrayList<Account> getAccounts(){
+	  ArrayList<Account> accounts= new acccontrol.getAccounts();
+	  return accounts;
   }
     /**
    * This is a method that logs in the user
@@ -55,7 +70,8 @@ public class AccountController{
    * @returns true if the login is completed
    */
   public boolean login(String username, String password){
-    return true;
+	  LogonController lg = new LogonController();
+	  return lg.login(username,password);
   }
   
 }
