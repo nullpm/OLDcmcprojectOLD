@@ -29,8 +29,8 @@ public class DBController{
    * @param university the university object to be added
    * @returns true if addition is successful
    */
-  public University addUniversity(University university){
-    return null;
+  public boolean addUniversity(University university){
+    return false;
   }
   /**
    * This is a method that edits a university's information in the database
@@ -38,8 +38,8 @@ public class DBController{
    * @param university the edited university object
    * @returns true if university is updated successfully
    */
-  public University editUniversity(University university){
-    return null;
+  public boolean editUniversity(University university){
+    return false;
   }
   
   /**
